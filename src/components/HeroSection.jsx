@@ -14,30 +14,35 @@ const HeroSection = () => {
     ];
 
     return (
-        <div className=" w-full h-screen">
-            <div className="max-w-full md:flex-row h-3/4 grid grid-cols-3 p-5">
-                {/* Left Text */}
-                <div class=" max-w-lg flex items-center  justify-center col-span-1 px-10  bg-green-300 ">
-                    <div classname="grid grid-rows-2 ">
-                        <p className="text-3xl font-semibold font-serif row-span-2">
+        <div className="w-full h-screen mb-0">
+            <div className="grid grid-cols-5 gap-6 h-3/4 p-5">
+
+                {/* Text Section - Slightly Narrower */}
+                <div className="col-span-2 flex items-center justify-center px-10 rounded-xl">
+                    <div className="space-y-4">
+                        <p className="text-4xl font-semibold font-serif">
                             🌿Welcome to PlantPeek
                             <br />
-                            <span className="font-normal text-2xl ">
+                            <span className="font-normal text-2xl">
                                 — your green guide to the plant world.
                             </span>
                         </p>
-                        <p className="text-sm font-normal text-justify row-span-1">
+                        <p className="text-md font-normal text-justify">
                             Discover the natural beauty, benefits, and stories behind every leaf.
                             From the lush jungles to your cozy living room, PlantPeek brings detailed knowledge and care guides for all kinds of plants — indoor, outdoor, rare, common, flowering, and more.
                         </p>
                     </div>
                 </div>
-                <div className="flex items-center col-span-2 overflow-hidden w-2xl rounded-xl bg-amber-400">
 
-                    <div className="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-base-100 to-transparent z-10 pointer-events-none" />
-                    <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-base-100 to-transparent z-10 pointer-events-none" />
+                {/* Image Grid Section - Slightly Wider */}
+                <div className="col-span-3 relative overflow-hidden rounded-xl flex items-center">
 
-                    <div className="columns-2 md:columns-3 gap-2 space-y-2">
+                    {/* Fade Overlays */}
+                    <div className="absolute top-0 left-0 w-full h-15 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none" />
+                    <div className="absolute bottom-0 left-0 w-full h-15 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
+
+                    {/* Masonry Grid */}
+                    <div className="columns-2 md:columns-3 gap-2 space-y-2 px-2">
                         {images.map((src, index) => (
                             <img
                                 key={index}
@@ -49,7 +54,8 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
+
     );
 };
 
