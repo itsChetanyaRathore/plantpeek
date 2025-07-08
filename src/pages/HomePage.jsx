@@ -2,16 +2,44 @@ import React from 'react'
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 import Footer from '../components/Footer'
-import WateringCard from '../components/WateringCard'
+import PlantCategory from '../components/PlantCategory'
 
 const HomePage = () => {
+    const benefits = [
+        {
+            id: 1,
+            title: "Breath of Fresh Air",
+            desc: "Indoor plants help purify the air and reduce toxins naturally.",
+        },
+        {
+            id: 2,
+            title: "Spreads Positivity",
+            desc: "They enhance mood, reduce stress, and create a positive vibe.",
+        },
+        {
+            id: 3,
+            title: "Promotes Recovery",
+            desc: "Studies show faster healing and recovery in the presence of plants.",
+        },
+        {
+            id: 4,
+            title: "Therapeutic to Care For",
+            desc: "Caring for plants offers a sense of calm and mindfulness.",
+        },
+    ];
+
     return (
         <>
+            <style>{`
+        .soft-blob {
+          border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+      `}</style>
+
             <Header />
-            {/* <PlantSlider /> */}
             <HeroSection />
 
-            <div className="flex flex-row -mt-12 m-20">
+            <div className="flex flex-row -mt-20 m-20 ">
                 <h2 className="text-4xl w-1/2  px-4 font-semibold font-serif">
                     Nature’s wisdom, <br />right at your <br />fingertips.
                 </h2>
@@ -19,7 +47,7 @@ const HomePage = () => {
                     Knowing your plants means nurturing them better. Whether you’re creating a calm indoor oasis or planning a thriving garden, our encyclopedia equips you with everything you need to grow with confidence.
                 </p>
             </div >
-            <div className="flex flex-row w-full justify-center gap-6">
+            <div className="flex flex-row w-full justify-center gap-6 mb-20">
                 <img
                     src="https://media.istockphoto.com/id/1248915720/photo/farmers-hand-watering-a-young-plant.webp?a=1&b=1&s=612x612&w=0&k=20&c=GAk9e4eAqS0Iwl3mcUsf7cXbN9HoeviLzKFLUWrtsAk="
                     alt="img1"
@@ -36,7 +64,111 @@ const HomePage = () => {
                     className="h-70 shadow-xl rounded-xl"
                 />
             </div>
-            <WateringCard />
+
+            <div className="bg-[#f7f7f3] py-16 px-4">
+                {/* Title */}
+                <h2 className="text-2xl md:text-3xl font- text-center text-gray-800 mb-12">
+                    Why You Should Keep <span className="text-green-700 font-bold">Indoor Plants </span> ?
+                </h2>
+                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+                    {/* Left Column */}
+                    <div className="flex flex-col gap-16 items-end text-right">
+                        {benefits.slice(0, 2).map((item) => (
+                            <div key={item.id} className="flex items-center gap-4 max-w-xs">
+                                <div className="flex flex-col items-end">
+                                    <h4 className="text-xl underline font-semibold text-gray-800 mb-1 uppercase">
+                                        {item.title}
+                                    </h4>
+                                    <p className="text-md text-gray-600">{item.desc}</p>
+                                </div>
+                                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-700 text-white text-sm font-bold shrink-0">
+                                    {item.id}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Center Image */}
+                    <div className="flex justify-center">
+                        <img
+                            src="./src/assets/whyindoor.png"
+                            alt="Indoor Plant"
+                            className="h-90 w-full "
+                        />
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="flex flex-col gap-16 items-start text-left">
+                        {benefits.slice(2).map((item) => (
+                            <div key={item.id} className="flex items-center gap-4 max-w-xs">
+                                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-700 text-white text-sm font-bold shrink-0">
+                                    {item.id}
+                                </div>
+                                <div>
+                                    <h4 className="text-xl underline font-semibold text-gray-800 mb-1 uppercase">
+                                        {item.title}
+                                    </h4>
+                                    <p className="text-smd text-gray-600">{item.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <PlantCategory />
+
+            <div className="flex justify-center items-center py-10 px-4 mt-10">
+                <div className="text-center">
+                    <h2 className="text-3xl font-semibold text-green-800">
+                        Steps To Start Your Plants Off Right.
+                    </h2>
+                    <p className="text-sm text-gray-600 mt-2">Follow instructions for more</p>
+                </div>
+            </div>
+            <div className="flex justify-center gap-12 py-4 mb-10 bg-white">
+                <div className="text-center">
+                    <div className="relative w-28 h-28 mx-auto">
+                        <div className="absolute inset-0 bg-green-100 soft-blob"></div>
+                        <div className="relative flex items-center justify-center w-full h-full">
+                            <img src="./src/assets/inoculate.png" alt="Sow The Seeds" className="w-30 h-30" />
+
+                        </div>
+                    </div>
+                    <h3 className="mt-4 font-semibold text-lg">Inoculate</h3>
+                    <p className="text-sm w-80 text-gray-600 px-2 py-2">
+                        Introduce helpful microbes like bacteria or fungi to the soil or seed to boost plant health.                    </p>
+                </div>
+
+                <div className="text-center">
+                    <div className="relative w-28 h-28 mx-auto">
+                        <div className="absolute inset-0 bg-green-100 soft-blob"></div>
+                        <div className="relative flex items-center justify-center w-full h-full">
+                            <img src="./src/assets/seed.png" alt="Sow The Seeds" className="w-30 h-30" />
+
+                        </div>
+                    </div>
+                    <h3 className="mt-4 font-semibold text-lg">Sow The Seeds</h3>
+                    <p className="text-sm w-80 text-gray-600 px-2 py-2">
+                        Plant seeds at proper depth and spacing. Cover with soil and water gently to keep it moist.                    </p>
+                </div>
+
+                <div className="text-center">
+                    <div className="relative w-28 h-28 mx-auto">
+                        <div className="absolute inset-0 bg-green-100 soft-blob"></div>
+                        <div className="relative flex items-center justify-center w-full h-full">
+                            <img src="./src/assets/puntplant.png" alt="Sow The Seeds" className="w-30 h-30" />
+
+                        </div>
+                    </div>
+                    <h3 className="mt-4 font-semibold text-lg">Punt The Pots</h3>
+                    <p className="text-sm w-80 text-gray-600 px-2 py-2">
+                        Clear weeds, mix in compost if needed, and ensure loose, well-draining soil for strong roots.                    </p>
+                </div>
+            </div>
+
+
+
             <Footer />
         </>
     )

@@ -1,23 +1,30 @@
 import React from 'react';
 
 const WateringCard = () => (
-    <div className="relative bg-green-900 text-white p-6 rounded-[2rem] w-72 h-56 overflow-hidden flex flex-col justify-center shadow-lg">
-        {/* Top-left icon */}
-        <div className="absolute top-4 left-4 w-5 h-5 flex items-center justify-center bg-green-800 rounded-full">
-            <svg width="12" height="12" viewBox="0 0 20 20" fill="none">
-                <path d="M10 4v8m0 0l3-3m-3 3l-3-3" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+    <div className="relative w-80 h-40">
+        {/* Background card */}
+        <div className="absolute inset-0 bg-[#064E1A] text-white p-6 rounded-xl z-10">
+            <h2 className="text-lg font-semibold mb-2">
+                How Often Should You Water Your Plants?
+            </h2>
+            <p className="text-sm text-green-300 leading-relaxed">
+                Understand the signs, seasons, and rhythms of proper watering.....
+            </p>
         </div>
-        <h3 className="mt-4 text-lg font-semibold">
-            How Often Should You Water Your Plants?
-        </h3>
-        <p className="mt-2 text-sm text-green-100">
-            Understand the signs,<br />
-            seasons, and rhythms of<br />
-            proper watering…..
-        </p>
-        {/* Custom bottom-right cutout */}
-        <div className="absolute bottom-0 right-0 w-14 h-14 bg-white rounded-br-[2.5rem] rounded-tl-full" style={{ clipPath: 'circle(70% at 10% 70%)' }} />
+
+        {/* Curve cut-out at bottom-right */}
+        <svg
+            className="absolute bottom-0 right-0 z-20"
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M0 60 C30 60 60 30 60 0 V60 H0 Z"
+                fill="white"
+            />
+        </svg>
     </div>
 );
 

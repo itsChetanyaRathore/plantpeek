@@ -14,11 +14,11 @@ const HeroSection = () => {
     ];
 
     return (
-        <div className="w-full h-screen mb-0">
+        <div className="w-full h-screen mb-0 mt-4">
             <div className="grid grid-cols-5 gap-6 h-3/4 p-5">
 
                 {/* Text Section - Slightly Narrower */}
-                <div className="col-span-2 flex items-center justify-center px-10 rounded-xl">
+                <div className="col-span-2 flex items-center justify-center px-10 rounded-xl ">
                     <div className="space-y-4">
                         <p className="text-4xl font-semibold font-serif">
                             🌿Welcome to PlantPeek
