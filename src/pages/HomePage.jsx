@@ -1,8 +1,6 @@
-import React from 'react'
-import Header from '../components/Header'
-import HeroSection from '../components/HeroSection'
-import Footer from '../components/Footer'
-import PlantCategory from '../components/PlantCategory'
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import PlantCategory from '../components/PlantCategory';
 
 const HomePage = () => {
     const benefits = [
@@ -31,12 +29,11 @@ const HomePage = () => {
     return (
         <>
             <style>{`
-        .soft-blob {
-          border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-        }
-      `}</style>
+                .soft-blob {
+                  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                }
+            `}</style>
 
-            <Header />
             <HeroSection />
 
             <div className="flex flex-row -mt-20 m-20 ">
@@ -167,11 +164,8 @@ const HomePage = () => {
                 </div>
             </div>
 
-
-
-            <Footer />
         </>
-    )
-}
+    );
+};
 
-export default HomePage
+export default HomePage;
