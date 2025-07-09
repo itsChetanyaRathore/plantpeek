@@ -22,9 +22,7 @@ const AboutUs = () => {
             />
         </div>
  </div>   
-      {/* Story Section */}
         <div className="bg-white py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Left Image */}
           <div>
             <img
               src="https://images.unsplash.com/photo-1619765872256-b69c508ad4a8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8" // 📌 Replace with your own image path in public folder
@@ -32,8 +30,6 @@ const AboutUs = () => {
               className="w-md h-1/2 shadow-md"
             />
           </div>
-
-          {/* Right Text */}
           <div>
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
               Story Of Our Journey
