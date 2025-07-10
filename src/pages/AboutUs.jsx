@@ -30,6 +30,32 @@ const AboutUs = () => {
         </div>
       </div>
 
+      <div className=" w-full p-6 mx-auto h-76">
+
+        <div className="flex flex-col md:flex-row items-center justify-center px-40 gap-5">
+          <div className="w-50 md:w-50 flex ">
+            <img
+              src="./src/assets/sideplant.png"
+              alt="Great for Beginners"
+              className="w-50 h-70 object-cover"
+            />
+          </div>
+          <div className="w-full md:w-1/2 text-center md:text-left">
+            <h3 className="text-xl font-semibold mb-2 text-green-800">
+              Great for Beginners
+            </h3>
+            <p className="text-gray-700 w-xl text-justify leading-relaxed">
+              Start off your subscription with the most beginner-friendly plants we have to offer.
+              We send you detailed, easy-to-follow instructions on caring for your newly loved leafy friend.
+            </p>
+          </div>
+
+
+          {/* Text */}
+
+        </div>
+      </div>
+
       <div className="bg-white py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <img
@@ -51,9 +77,9 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="w-full bg-green-950 text-white flex flex-row justify-between px-20 ">
-        <h1 className="text-2xl flex items-center font-bold font-serif w-5xl gap-20  mt-5 ">🌿Our Green Mission
-          <p className="text-lg w-2xl text-justify font-normal text-gray-300 mb-10"><br />
+      <div className="w-full bg-green-900 text-white flex flex-row justify-between px-30 ">
+        <h1 className="text-2xl flex items-center font-bold font-serif w-7xl gap-30  mt-5 ">🌿Our Green Mission
+          <p className="text-lg w-3xl text-justify font-normal text-gray-100 mb-10"><br />
             At Plant Peek, we do more than share plant facts—we promote a greener, more mindful lifestyle.
             By simplifying plant care, we inspire home gardening and eco-friendly living.
             In the future, we hope to launch green initiatives like tree planting and urban gardening.

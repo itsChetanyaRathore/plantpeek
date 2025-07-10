@@ -42,11 +42,6 @@ const FAQPage = () => {
                     alt="Left Leaf"
                     className="absolute top-40 -left-8 w-36 md:w-48 z-0 pointer-events-none"
                 />
-                {/* <img
-                    src="./src/assets/image4.png"
-                    alt="Right Leaf"
-                    className="absolute top-3/4 -right-15 w-40 md:w-52  z-0 pointer-events-none"
-                /> */}
                 <img
                     src="./src/assets/image2.png"
                     alt="Floating Leaf"
@@ -55,7 +50,7 @@ const FAQPage = () => {
                 <img
                     src="./src/assets/image3.png"
                     alt="Floating Leaf"
-                    className="absolute bottom-10 -left-20 size-60 w-full md:w-40 z-0 pointer-events-none"
+                    className="absolute bottom-10 -left-20 size-60 w-full md:w-60 z-0 pointer-events-none"
                 />
                 <img
                     src="./src/assets/image5.png"

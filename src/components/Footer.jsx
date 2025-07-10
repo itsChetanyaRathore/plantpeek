@@ -17,6 +17,7 @@ const Footer = () => {
                 <nav className="flex flex-col sm:flex-row justify-center items-center gap-10 flex-wrap text-sm font-medium py-5">
                     <a className="link link-hover" href="#">Home</a>
                     <a className="link link-hover" href="#">Categories</a>
+                    <a className="link link-hover" href="#">Care Tips</a>
                     <a className="link link-hover" href="#">Blog</a>
                     <a className="link link-hover" href="#">About Us</a>
                     <a className="link link-hover" href="#">FAQ</a>

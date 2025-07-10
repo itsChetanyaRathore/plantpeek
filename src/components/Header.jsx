@@ -22,11 +22,14 @@ const Header = () => {
                     <div className={`tab ${isActive("/categories") ? "tab-active" : ""}`} onClick={() => navigate("/categories")}>
                         Categories
                     </div>
-                    <div className={`tab ${isActive("/blog") ? "tab-active" : ""}`} onClick={() => navigate("/blog")}>
-                        Blog
+                    <div className={`tab ${isActive("/caretips") ? "tab-active" : ""}`} onClick={() => navigate("/caretips")}>
+                        Care Tips
                     </div>
                     <div className={`tab ${isActive("/about") ? "tab-active" : ""}`} onClick={() => navigate("/about")}>
                         About Us
+                    </div>
+                    <div className={`tab ${isActive("/blog") ? "tab-active" : ""}`} onClick={() => navigate("/blog")}>
+                        Blog
                     </div>
                     <div className={`tab ${isActive("/faq") ? "tab-active" : ""}`} onClick={() => navigate("/faq")}>
                         FAQ
