@@ -4,21 +4,16 @@ const AboutUs = () => {
   return (
     <>
       <div style={{ backgroundColor: "#ecfae5" }} className="relative w-full  overflow-hidden">
-        {/* Top Left Image */}
         <img
           src="./src/assets/sideleaf.png"
           alt="side"
           className="absolute top-0 left-0 w-28 md:w-50 z-0 "
         />
-
-        {/* Bottom Right Image */}
         <img
           src="./src/assets/sideleaf2.png"
           alt="sideleaf"
           className="absolute bottom-0 right-0 w-48 md:w-64 z-0 "
         />
-
-        {/* Text Content */}
         <div className="relative z-10 flex flex-row items-center justify-center gap-10 py-16 px-4">
           <h1 className="text-3xl flex flex-col justify-center text-green-800 items-center font-bold font-serif mb-4">
             ABOUT US
@@ -31,7 +26,6 @@ const AboutUs = () => {
       </div>
 
       <div className=" w-full p-6 mx-auto h-76">
-
         <div className="flex flex-col md:flex-row items-center justify-center px-40 gap-5">
           <div className="w-50 md:w-50 flex ">
             <img
@@ -49,10 +43,6 @@ const AboutUs = () => {
               We send you detailed, easy-to-follow instructions on caring for your newly loved leafy friend.
             </p>
           </div>
-
-
-          {/* Text */}
-
         </div>
       </div>
 
