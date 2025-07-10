@@ -36,7 +36,7 @@ const FAQPage = () => {
 
     return (
         <>
-            <div className="relative min-h-screen bg-[#f9f9fc] px-4 md:px-10 py-16 overflow-hidden">
+            <div className="relative min-h-screen  px-4 md:px-10 py-16 overflow-hidden">
                 <img
                     src="./src/assets/image1.png"
                     alt="Left Leaf"
@@ -59,7 +59,7 @@ const FAQPage = () => {
                 />
 
                 <div className="text-center mb-12 relative z-10">
-                    <h1 className="text-2xl text-green-800 font-semibold font-serif">
+                    <h1 className="text-4xl text-green-800 font-semibold font-serif">
                         Frequently Asked Questions
                     </h1>
                 </div>

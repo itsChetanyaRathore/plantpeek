@@ -37,7 +37,7 @@ const HomePage = () => {
             <HeroSection />
 
             <div className="flex flex-row -mt-20 m-20 ">
-                <h2 className="text-4xl w-1/2  px-4 font-semibold font-serif">
+                <h2 className="text-4xl w-1/3  px-4 font-semibold font-serif">
                     Nature’s wisdom, <br />right at your <br />fingertips.
                 </h2>
                 <p className="text-lg text-justify w-2/3">
@@ -61,8 +61,8 @@ const HomePage = () => {
                     className="h-70 shadow-xl rounded-xl"
                 />
             </div>
-
-            <div className="bg-[#f7f7f3] py-16 px-4">
+            <PlantCategory />
+            <div className="bg-[#f7f7f3] py-16 px-4 mt-25">
                 {/* Title */}
                 <h2 className="text-2xl md:text-3xl font- text-center text-gray-800 mb-12">
                     Why You Should Keep <span className="text-green-700 font-bold">Indoor Plants </span> ?
@@ -113,7 +113,8 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <PlantCategory />
+
+
 
             <div className="flex justify-center items-center py-10 px-4 mt-10">
                 <div className="text-center">
@@ -123,7 +124,7 @@ const HomePage = () => {
                     <p className="text-sm text-gray-600 mt-2">Follow instructions for more</p>
                 </div>
             </div>
-            <div className="flex justify-center gap-12 py-4 mb-10 bg-white">
+            <div className="flex justify-center gap-12 py-4 mb-10 ">
                 <div className="text-center">
                     <div className="relative w-28 h-28 mx-auto">
                         <div className="absolute inset-0 bg-green-100 soft-blob"></div>
@@ -164,6 +165,43 @@ const HomePage = () => {
                 </div>
             </div>
 
+            <div className="w-full min-h-1/2 text-gray-800 font-sans px-10 pt-10 relative bg-gray overflow-hidden">
+                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+                    {/* Left Section */}
+                    <div className="w-full lg:w-1/2 space-y-10">
+                        <h1 className="text-6xl font-serif font-light text-black">
+                            Proper care of
+                            <span className="text-green-900 font-medium ">  Plants</span>
+                        </h1>
+                        <p className="text-lg text-gray-700 w-3xl">
+                            Looking for an easier way to care for your plants?
+                            <br />
+                            <br />
+                            Explore the world of greenery with our plant encyclopedia — Start
+                            now and show your plants the love they need!
+                        </p>
+                    </div>
+
+                    {/* Image */}
+                    <img
+                        src="https://imgs.search.brave.com/t1IReKRwuXsQcFG3HrwcZhgYLdwUMSn3c2lBBeYhPAc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy90aGUt/c2lsbC1hbG9jYXNp/YS10aW55LWRhbmNl/ci1tZWRpdW0tZ3Jh/bnQtY3JlYW0tdmFy/aWFudC02NzY0NTU0/M2M5ZjQ4LmpwZWc_/Y3JvcD0xLjAweHc6/MC43NzR4aDswLDAu/MDU1M3hoJnJlc2l6/ZT05ODA6Kg"
+                        alt="care"
+                        className="w-90 rounded-tl-4xl rounded-br-4xl shadow-lg"
+                    />
+                </div>
+            </div>
+            {/* Green Bar */}
+            <div className="w-full h-24 bg-green-900 text-lg text-white flex flex-row gap-8 items-center justify-center mt-10">
+                <img
+                    src="https://images.unsplash.com/photo-1573283916394-c4b16178156b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGluZG9vciUyMHBsYW50JTIwcG90JTIwaW1hZ2VzfGVufDB8MHwwfHx8MA%3D%3D"
+                    alt="care"
+                    className="w-45 h-35"
+                />
+                <p>
+                    Your complete guide to plant care — learn everything from sunlight
+                    needs to watering tips and keep your plants thriving, the natural way.
+                </p>
+            </div>
         </>
     );
 };
