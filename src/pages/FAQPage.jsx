@@ -92,8 +92,6 @@ const FAQPage = () => {
                     ))}
                 </div>
             </div>
-
-
         </>
     );
 };
