@@ -52,7 +52,7 @@ const BlogPage = () => {
             <div className="flex flex-col md:flex-row w-full bg-green-50 h-96">
                 <div className="md:w-1/2">
                     <img
-                        src="https://images.unsplash.com/photo-1518564747095-d2fbe4b452b7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBvdHRlZCUyMHBsYW50fGVufDB8MHwwfHx8MA%3D%3D"
+                        src="https://plus.unsplash.com/premium_photo-1673064926997-813c731632a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBvdHRlZCUyMHBsYW50fGVufDB8MHwwfHx8MA%3D%3D"
                         alt="Plant in Hand"
                         className="w-full h-full shadow-sm object-cover"
                     />
