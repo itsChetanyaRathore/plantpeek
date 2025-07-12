@@ -19,7 +19,7 @@ const BlogPage = () => {
         {
             title: "Top 10 Fragrant Flowering Plants For Ultimate Garden Bliss",
             date: "March 18, 2021 ",
-            image:"https://images.unsplash.com/photo-1537691237913-3d0e4d444de4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "https://images.unsplash.com/photo-1537691237913-3d0e4d444de4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             desc: "The right scent can transform a space, creating a relaxing atmosphere, boosting mood, and leaving a lasting impression on anyone who visits. ",
             url: "https://nurserylive.com/blogs/top-10-plants/top-10-fragrant-flowering-plants-for-ultimate-garden-bliss"
         },
@@ -39,7 +39,7 @@ const BlogPage = () => {
         },
         {
             title: "Top 10 Indoor Flowering Plants for Add Colors In Your Interiors",
-            date: "March 30, 202",
+            date: "March 30, 2020",
             image: "https://plus.unsplash.com/premium_photo-1664391914821-29ee0b3d98ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kb29yJTIwZmxvd2VyJTIwdmFzZXN8ZW58MHwwfDB8fHww",
             desc: "A green ambience fills your home with positivity and tranquillity. And who doesn't like that? The fresh fragrance of grass and flowers are soothing to the eyes and refreshing to the mind. ",
             url: "https://nurserylive.com/blogs/top-10-plants/top-10-indoor-flowering-plants-for-add-colors-in-your-interiors"
@@ -48,24 +48,22 @@ const BlogPage = () => {
 
     return (
         <div className="bg-white min-h-screen">
-            {/* Banner */}
-            <div className="flex flex-col md:flex-row w-full bg-green-50 h-96">
-                <div className="md:w-1/2">
-                    <img
-                        src="https://plus.unsplash.com/premium_photo-1673064926997-813c731632a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBvdHRlZCUyMHBsYW50fGVufDB8MHwwfHx8MA%3D%3D"
-                        alt="Plant in Hand"
-                        className="w-full h-full shadow-sm object-cover"
-                    />
-                </div>
-                <div className="md:w-1/2 flex flex-col justify-center px-30 space-y-5">
-                    <h1 className="text-7xl font-bold font-serif text-green-900">BLOG</h1>
-                    <p className="text-lg text-gray-700">
-                        Tips and insights every plant lover needs to grow and thrive.
-                    </p>
+            <div className="relative w-full h-[400px]">
+                <img
+                    src="https://images.pexels.com/photos/31825260/pexels-photo-31825260.png"
+                    alt="Background"
+                    className="w-full h-full object-cover absolute inset-0 z-0"
+                />
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                    <div className="bg-white/30 backdrop-blur-sm p-8 rounded-xl shadow-md text-center w-3xl">
+                        <h1 className="text-4xl md:text-6xl font-bold font-serif text-white">BLOG</h1>
+                        <p className="text-lg text-white mt-4">
+                            Tips and insights every plant lover needs to grow and thrive.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            {/* Blog Cards */}
             <div className="max-w-7xl mx-auto px-6 py-15 mb-20">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
                     {posts.map((post, idx) => (
@@ -98,7 +96,7 @@ const BlogPage = () => {
                 </div>
             </div>
             <div className="w-full bg-green-900 h-1"></div>
-        </div>
+        </div >
     );
 };
 
