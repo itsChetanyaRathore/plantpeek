@@ -48,7 +48,7 @@ const BlogPage = () => {
 
     return (
         <div className="bg-white min-h-screen">
-            <div className="relative w-full h-[400px]">
+            <div className="relative w-full h-70">
                 <img
                     src="https://images.pexels.com/photos/31825260/pexels-photo-31825260.png"
                     alt="Background"
@@ -56,8 +56,8 @@ const BlogPage = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center z-10">
                     <div className="bg-white/30 backdrop-blur-sm p-8 rounded-xl shadow-md text-center w-3xl">
-                        <h1 className="text-4xl md:text-6xl font-bold font-serif text-white">BLOG</h1>
-                        <p className="text-lg text-white mt-4">
+                        <h1 className="text-4xl md:text-5xl font-bold font-serif text-white">BLOG</h1>
+                        <p className="text-md text-white mt-4">
                             Tips and insights every plant lover needs to grow and thrive.
                         </p>
                     </div>

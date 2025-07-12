@@ -6,11 +6,13 @@ import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer';
 import FAQPage from './pages/FAQPage';
 import BlogPage from './pages/BlogPage';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
