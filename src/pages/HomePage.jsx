@@ -113,9 +113,6 @@ const HomePage = () => {
                 </div>
             </div>
 
-
-
-
             <div className="flex justify-center items-center py-10 px-4 mt-10">
                 <div className="text-center">
                     <h2 className="text-3xl font-semibold text-green-800">

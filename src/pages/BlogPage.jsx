@@ -47,12 +47,12 @@ const BlogPage = () => {
     ];
 
     return (
-        <div className="bg-white min-h-screen">
-            <div className="relative w-full h-70">
+        <div className="min-h-screen bg-gray-100">
+            <div div className="relative w-full h-70 " >
                 <img
                     src="https://images.pexels.com/photos/31825260/pexels-photo-31825260.png"
                     alt="Background"
-                    className="w-full h-full object-cover absolute inset-0 z-0"
+                    className="w-full h-full object-cover absolute inset-0 z-0 "
                 />
                 <div className="absolute inset-0 flex items-center justify-center z-10">
                     <div className="bg-white/30 backdrop-blur-sm p-8 rounded-xl shadow-md text-center w-3xl">
@@ -67,18 +67,15 @@ const BlogPage = () => {
             <div className="max-w-7xl mx-auto px-6 py-15 mb-20">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
                     {posts.map((post, idx) => (
-                        <div key={idx} className=" rounded-tl-4xl rounded-br-4xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div key={idx} className=" rounded-tr-4xl rounded-bl-4xl overflow-hidden bg-gray-50 shadow-lg hover:shadow-xl transition">
                             <img
                                 src={post.image}
                                 alt={post.title}
-                                className="w-full h-60 object-cover"
+                                className="w-full h-60 object-cover p-2 rounded-tr-4xl rounded-bl-4xl"
                             />
                             <div className="p-4 space-y-2">
                                 <div className="flex justify-between items-center text-sm text-gray-500">
                                     <span>{post.date}</span>
-                                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">
-                                        {post.tag}
-                                    </span>
                                 </div>
                                 <h3 className="text-lg font-semibold text-gray-800">{post.title}</h3>
                                 <p className="text-sm text-gray-600">{post.desc}</p>
