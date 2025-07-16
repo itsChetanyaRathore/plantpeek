@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
 import FAQPage from './pages/FAQPage';
 import BlogPage from './pages/BlogPage';
+import BlogDetail from './pages/BlogDetail';
 import CategoryPage from './pages/categories/CategoryPage';
 import PlantDetailPage from './pages/PlantDetailPage';
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog-detail" element={<BlogDetail />} />
         <Route path="/categories" element={<CategoryPage />} />
         <Route path="/plant/:name" element={<PlantDetailPage />} />
       </Routes>
