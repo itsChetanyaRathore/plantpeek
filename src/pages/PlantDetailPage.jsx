@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const PlantDetailPage = () => {
-    const { name } = useParams(); // plant name from URL
+    const { name } = useParams();
     const navigate = useNavigate();
     const [plant, setPlant] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -47,7 +47,7 @@ const PlantDetailPage = () => {
 
     return (
         <div className="max-w-4xl mx-auto p-6">
-            <button onClick={() => navigate(-1)} className="mb-6 text-green-700 hover:underline font-semibold">
+            <button onClick={() => navigate(-1)} className="mb-6 text-green-900 hover:underline font-bold">
                 ← Back to categories
             </button>
 
@@ -59,10 +59,10 @@ const PlantDetailPage = () => {
                         className="w-full md:w-1/2 h-96 object-cover rounded-lg"
                     />
                     <div className="flex-1">
-                        <h1 className="text-3xl font-bold text-green-800 mb-2">{plant.name}</h1>
+                        <h1 className="text-3xl font-serif font-bold text-green-800 mb-2">{plant.name}</h1>
                         <p className="text-sm italic text-gray-500 mb-4">Category: {plant.category}</p>
 
-                        <ul className="space-y-2 text-sm text-gray-800">
+                        <ul className="space-y-2 text-md text-gray-800">
                             <li><strong>Scientific Name:</strong> {plant.scientific_name}</li>
                             <li><strong>Height:</strong> {plant.height}</li>
                             <li><strong>Temperature:</strong> {plant.temperature}</li>
@@ -74,7 +74,7 @@ const PlantDetailPage = () => {
                         </ul>
                     </div>
                 </div>
-                <div><p className="text-gray-700 mt-4">{plant.description}</p>
+                <div><strong>Description:</strong><p className="text-gray-700 mt-4 text-md">{plant.description}</p>
                 </div>
             </div>
         </div>

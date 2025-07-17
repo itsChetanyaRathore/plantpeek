@@ -28,7 +28,7 @@ const SearchFilterBar = ({ searchQuery, setSearchQuery, filter, setFilter }) => 
                     <option value="indoor">Indoor</option>
                     <option value="outdoor">Outdoor</option>
                     <option value="shrubs">Shrubs</option>
-                    <option value="flowers">Flowers</option>
+                    <option value="flowering">Flowers</option>
                 </select>
             </div>
         </div>

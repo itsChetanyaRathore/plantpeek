@@ -10,12 +10,12 @@ const PlantCard = ({ title, image }) => {
     return (
         <div
             onClick={handleClick}
-            className="w-full max-w-xs bg-white shadow-md rounded-3xl h-96 px-4 hover:shadow-xl transition duration-300 cursor-pointer"
+            className="w-full max-w-xs bg-white shadow-md rounded-tr-4xl rounded-bl-4xl h-96 px-4 hover:shadow-xl transition duration-300 cursor-pointer"
         >
             <img
                 src={image}
                 alt={title}
-                className="w-full h-80 object-cover rounded-xl mb-2"
+                className="w-full h-80 object-cover rounded-tr-4xl rounded-bl-4xl mb-2"
             />
             <div className="flex justify-between items-center">
                 <p className="text-md  p-2 mb-2 text-green-900 font-serif font-bold">
