@@ -47,7 +47,7 @@ const BlogDetail = () => {
                     alt={blog.title}
                     className="w-full h-96 object-cover rounded mb-6"
                 />
-                <p className="text-gray-800 leading-relaxed whitespace-pre-line text-justify">
+                <p className="text-gray-800 leading-relaxed whitespace-pre-line text-lg text-justify">
                     {blog.content || blog.desc}
                 </p>
             </div>
