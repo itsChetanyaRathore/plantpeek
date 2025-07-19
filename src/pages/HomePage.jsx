@@ -187,18 +187,7 @@ const HomePage = () => {
                     />
                 </div>
             </div>
-            {/* Green Bar */}
-            <div className="w-full h-24 bg-green-900 text-lg text-white flex flex-row gap-8 items-center justify-center mt-10">
-                <img
-                    src="https://images.unsplash.com/photo-1573283916394-c4b16178156b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGluZG9vciUyMHBsYW50JTIwcG90JTIwaW1hZ2VzfGVufDB8MHwwfHx8MA%3D%3D"
-                    alt="care"
-                    className="w-45 h-35"
-                />
-                <p>
-                    Your complete guide to plant care — learn everything from sunlight
-                    needs to watering tips and keep your plants thriving, the natural way.
-                </p>
-            </div>
+
         </>
     );
 };

@@ -31,6 +31,9 @@ const Header = () => {
                     <div className={`tab ${isActive("/faq") ? "tab-active" : ""}`} onClick={() => navigate("/faq")}>
                         FAQ
                     </div>
+                    <div className={`tab ${isActive("/care-tips") ? "tab-active" : ""}`} onClick={() => navigate("/care-tips")}>
+                        Care Tips
+                    </div>
                 </div>
             </div>
         </div>

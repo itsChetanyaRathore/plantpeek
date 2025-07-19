@@ -12,6 +12,7 @@ import BlogPage from './pages/BlogPage';
 import BlogDetail from './pages/BlogDetail';
 import CategoryPage from './pages/categories/CategoryPage';
 import PlantDetailPage from './pages/PlantDetailPage';
+import CareTipsPage from './pages/CareTipsPage';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/blog-detail" element={<BlogDetail />} />
         <Route path="/categories" element={<CategoryPage />} />
         <Route path="/plant/:name" element={<PlantDetailPage />} />
+        <Route path="/care-tips" element={<CareTipsPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
