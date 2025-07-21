@@ -62,7 +62,7 @@ const HomePage = () => {
                 />
             </div>
             <PlantCategory />
-            <div className="bg-[#f7f7f3] py-16 px-4 mt-25">
+            <div className="bg-[#f2faf1] py-16 px-4 mt-25">
                 {/* Title */}
                 <h2 className="text-2xl md:text-3xl font- text-center text-gray-800 mb-12">
                     Why You Should Keep <span className="text-green-700 font-bold">Indoor Plants </span> ?
@@ -162,7 +162,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="w-full min-h-1/2 text-gray-800 font-sans px-10 pt-10 relative bg-gray overflow-hidden">
+            <div className="w-full min-h-1/2 text-gray-800 font-sans px-10 pt-10 relative bg-gray overflow-hidden mb-20">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
                     {/* Left Section */}
                     <div className="w-full lg:w-1/2 space-y-10">

@@ -21,6 +21,7 @@ const Footer = () => {
                 <nav className="flex flex-col sm:flex-row justify-center items-center gap-10 flex-wrap text-sm font-medium py-5">
                     <button className="link link-hover" onClick={() => navigate("/")}>Home</button>
                     <button className="link link-hover" onClick={() => navigate("/categories")}>Categories</button>
+                    <button className="link link-hover" onClick={() => navigate("/care-tips")}>Care Tips</button>
                     <button className="link link-hover" onClick={() => navigate("/blog")}>Blog</button>
                     <button className="link link-hover" onClick={() => navigate("/about")}>About Us</button>
                     <button className="link link-hover" onClick={() => navigate("/faq")}>FAQ</button>
