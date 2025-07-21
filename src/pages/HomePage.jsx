@@ -1,6 +1,8 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import PlantCategory from '../components/PlantCategory';
+import blogData from "../data/blogData.json";
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
     const benefits = [
@@ -25,7 +27,7 @@ const HomePage = () => {
             desc: "Caring for plants offers a sense of calm and mindfulness.",
         },
     ];
-
+    const navigate = useNavigate();
     return (
         <>
             <style>{`
@@ -188,6 +190,43 @@ const HomePage = () => {
                 </div>
             </div>
 
+            {/* Blog Preview Section */}
+            <div className="max-w-7xl mx-auto px-6 py-12">
+                <h2 className="text-3xl font-bold mb-8 text-center text-green-900">Latest Blog Posts</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {blogData.slice(0, 3).map((post, idx) => (
+                        <div
+                            key={idx}
+                            className="rounded-tl-3xl rounded-br-3xl overflow-hidden shadow-md hover:shadow-xl transition cursor-pointer"
+                            onClick={() => navigate("/blog-detail", { state: { blog: post } })}
+                        >
+                            <img
+                                src={post.image}
+                                alt={post.title}
+                                className="w-full h-56 object-cover"
+                            />
+                            <div className="p-5 space-y-2">
+                                <div className="text-sm text-gray-500">{post.date}</div>
+                                <h3 className="text-lg font-semibold text-gray-800">{post.title}</h3>
+                                <p className="text-sm text-gray-600 line-clamp-3 whitespace-pre-line">
+                                    {post.desc || post.content?.slice(0, 150) + "..."}
+                                </p>
+                                <span className="text-green-700 font-semibold hover:underline">Read more →</span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Button to View All Blogs */}
+                <div className="flex justify-center mt-10">
+                    <button
+                        onClick={() => navigate("/blog")}
+                        className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full text-md shadow-md"
+                    >
+                        View All Blogs
+                    </button>
+                </div>
+            </div>
         </>
     );
 };
