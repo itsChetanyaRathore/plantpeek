@@ -13,12 +13,12 @@ const Footer = () => {
                         alt="PlantPeek Logo"
                         className="h-30 w-40"
                     />
-                    <p className="text-sm mb-1">Discover the beauty of plants</p>
+                    <p className="text-sm mb-1">Where Green Knowledge Blooms</p>
                 </div>
 
                 <div className="w-md h-0.5 bg-gray-300 mx-auto my-4 rounded-full"></div>
 
-                <nav className="flex flex-col sm:flex-row justify-center items-center gap-10 flex-wrap text-sm font-medium py-5">
+                <nav className="flex flex-col sm:flex-row justify-center items-center gap-10 flex-wrap text-sm font-semibold text-green-800 und py-5">
                     <button className="link link-hover" onClick={() => navigate("/")}>Home</button>
                     <button className="link link-hover" onClick={() => navigate("/categories")}>Categories</button>
                     <button className="link link-hover" onClick={() => navigate("/care-tips")}>Care Tips</button>
