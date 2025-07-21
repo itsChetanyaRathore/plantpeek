@@ -39,12 +39,17 @@ const AboutUs = () => {
           <h2 className="text-3xl font-semibold font-serif text-green-800 mb-6">
             Our Green Journey
           </h2>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Plant Peek sprouted from a dorm room in 2018 when our founders noticed how disconnected urban dwellers had become from nature. What began as a college project documenting local plant species has blossomed into a comprehensive digital platform serving over 500,000 plant enthusiasts worldwide.
+          <p className="text-gray-900 mb-6 leading-relaxed">
+            At Plant Peek, we believe that every leaf tells a story, and every plant holds a purpose in the balance of life.
+            Our vision is to make the world of plants more accessible, understandable, and inspiring for everyone—from curious beginners taking care of their first succulent, to seasoned plant parents growing their indoor jungles. In a fast-paced digital world, we aim to slow things down and bring people back to nature, one plant at a time.
+            We envision a future where homes, schools, and communities thrive with greenery—where people reconnect with the environment and embrace a more mindful, sustainable lifestyle.
+
           </p>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            Today, our team of botanists, horticulturists, and tech enthusiasts work together to create accurate, accessible plant care resources. We believe that understanding plants shouldn't require a degree in botany—it should be as natural as tending to your own garden.
-          </p>
+          <p className="text-gray-900 mb-6 leading-relaxed">
+           Because to care for a plant is to care for life itself.
+           A quiet act of love that brings peace, patience, and purpose into our lives.
+           And that’s a journey worth sharing—with you, with nature, and with the world.
+           </p>
         </div>
       </div>
 
