@@ -9,7 +9,7 @@ const BlogPage = () => {
         <div className="bg-white min-h-screen">
             <div className="relative w-full h-70">
                 <img
-                    src="/assets/blog_bg.jpg"
+                    src="/blog_bg.jpg"
                     alt="Background"
                     className="w-full h-full object-cover absolute inset-0 z-0"
                 />

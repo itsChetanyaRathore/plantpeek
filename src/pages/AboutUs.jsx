@@ -6,12 +6,12 @@ const AboutUs = () => {
       {/* Hero Section */}
       <div className="relative w-full bg-[#f2faf1]  overflow-hidden">
         <img
-          src="/assets/sideleaf.png"
+          src="/sideleaf.png"
           alt="side"
           className="absolute top-0 left-0 w-28 md:w-50 z-0 "
         />
         <img
-          src="/assets/sideleaf2.png"
+          src="/sideleaf2.png"
           alt="sideleaf"
           className="absolute bottom-0 right-0 w-48 md:w-64 z-0 "
         />

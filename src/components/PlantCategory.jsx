@@ -2,10 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const categories = [
-    { label: 'Indoor Plant', type: 'indoor', image: '/assets/indoorP.png' },
-    { label: 'Outdoor Plant', type: 'outdoor', image: '/assets/outdoorP.png' },
-    { label: 'Shrub', type: 'shrubs', image: '/assets/shrub.png' },
-    { label: 'Flower', type: 'flowering', image: '/assets/flowers.png' },
+    { label: 'Indoor Plant', type: 'indoor', image: '/indoorP.png' },
+    { label: 'Outdoor Plant', type: 'outdoor', image: '/outdoorP.png' },
+    { label: 'Shrub', type: 'shrubs', image: '/shrub.png' },
+    { label: 'Flower', type: 'flowering', image: '/flowers.png' },
 ];
 
 const CategorySection = () => {
