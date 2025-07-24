@@ -25,17 +25,17 @@ const PlantCareTips = () => {
 
                             {/* Plant Image */}
                             <img
-                                src="./public/assets/plantcare3.png"
+                                src="/assets/plantcare3.png"
                                 alt="Peace Lily"
                                 className="relative z-10 w-[220px] md:w-[280px] h-auto object-contain mt-5"
                             />
                         </div>
                     </div>
                     <div className="absolute -bottom-10 -left-10 w-40 opacity-30">
-                        <img src="/public/assets/leaf-deco-left.png" alt="Decorative Leaf Left" />
+                        <img src="/assets/leaf-deco-left.png" alt="Decorative Leaf Left" />
                     </div>
                     <div className="absolute -bottom-10 -right-10 w-40 opacity-30">
-                        <img src="/public/assets/leaf-deco-right.png" alt="Decorative Leaf Right" />
+                        <img src="/assets/leaf-deco-right.png" alt="Decorative Leaf Right" />
                     </div>
                 </div>
                 {/* Content Section */}
@@ -66,7 +66,7 @@ const PlantCareTips = () => {
                     </div>
                     {/* Decorative bottom image */}
                     <div className="absolute -bottom-2 left-4/5 transform -translate-x-1/2 opacity-20">
-                        <img src="./public/assets/plantcare2.png" alt="Decorative Plant" className="w-80 " />
+                        <img src="/assets/plantcare2.png" alt="Decorative Plant" className="w-80 " />
                     </div>
                 </div>
             </div>
