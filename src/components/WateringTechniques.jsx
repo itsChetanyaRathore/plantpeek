@@ -20,7 +20,7 @@ const WateringTechniques = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-60 relative">
                 {/* Decorative Plant 2 - Bottom Left */}
                 <div className="absolute -top-70 left-3 transform -translate-x-1/2 opacity-20">
-                    <img src="./src/assets/decorplant.png" alt="Decorative Plant" className="w-80" />
+                    <img src="./public/assets/decorplant.png" alt="Decorative Plant" className="w-80" />
                 </div>
 
                 <div className="space-y-5 bg-green-900 p-10 rounded-bl-4xl rounded-tr-4xl shadow-sm h-60 w-96 mt-30 relative z-10">

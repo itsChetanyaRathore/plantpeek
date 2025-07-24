@@ -11,7 +11,7 @@ const Header = () => {
         <div className="w-full bg-base-100 shadow-md sticky top-0 z-50 px-4 py-2">
             <div className="flex items-center justify-between max-w-7xl mx-auto">
                 <img
-                    src="src/assets/PlantPeek_logo.png"
+                    src="public/assets/PlantPeek_logo.png"
                     alt="PlantPeek Logo"
                     className="w-28 h-22 border-gray-500"
                 />

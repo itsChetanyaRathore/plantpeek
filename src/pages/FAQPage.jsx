@@ -38,22 +38,22 @@ const FAQPage = () => {
         <>
             <div className="relative min-h-screen  px-4 md:px-10 py-16 overflow-hidden">
                 <img
-                    src="./src/assets/image1.png"
+                    src="./public/assets/image1.png"
                     alt="Left Leaf"
                     className="absolute top-40 -left-8 w-36 md:w-48 z-0 pointer-events-none"
                 />
                 <img
-                    src="./src/assets/image2.png"
+                    src="./public/assets/image2.png"
                     alt="Floating Leaf"
                     className="absolute -top-15 right-30 w-50 h-40 md:w-36 z-0 pointer-events-none"
                 />
                 <img
-                    src="./src/assets/image3.png"
+                    src="./public/assets/image3.png"
                     alt="Floating Leaf"
                     className="absolute bottom-10 -left-20 size-60 w-full md:w-60 z-0 pointer-events-none"
                 />
                 <img
-                    src="./src/assets/image5.png"
+                    src="./public/assets/image5.png"
                     alt="Decorative Leaf"
                     className="absolute top-2/5 -right-20 w-60 h-60  z-0 pointer-events-none"
                 />

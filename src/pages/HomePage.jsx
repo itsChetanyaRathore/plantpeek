@@ -90,7 +90,7 @@ const HomePage = () => {
                     {/* Center Image */}
                     <div className="flex justify-center">
                         <img
-                            src="./src/assets/whyindoor.png"
+                            src="./public/assets/whyindoor.png"
                             alt="Indoor Plant"
                             className="h-90 w-full "
                         />
@@ -128,7 +128,7 @@ const HomePage = () => {
                     <div className="relative w-28 h-28 mx-auto">
                         <div className="absolute inset-0 bg-green-100 soft-blob"></div>
                         <div className="relative flex items-center justify-center w-full h-full">
-                            <img src="./src/assets/inoculate.png" alt="Sow The Seeds" className="w-30 h-30" />
+                            <img src="./public/assets/inoculate.png" alt="Sow The Seeds" className="w-30 h-30" />
 
                         </div>
                     </div>
@@ -141,7 +141,7 @@ const HomePage = () => {
                     <div className="relative w-28 h-28 mx-auto">
                         <div className="absolute inset-0 bg-green-100 soft-blob"></div>
                         <div className="relative flex items-center justify-center w-full h-full">
-                            <img src="./src/assets/seed.png" alt="Sow The Seeds" className="w-30 h-30" />
+                            <img src="./public/assets/seed.png" alt="Sow The Seeds" className="w-30 h-30" />
 
                         </div>
                     </div>
@@ -154,7 +154,7 @@ const HomePage = () => {
                     <div className="relative w-28 h-28 mx-auto">
                         <div className="absolute inset-0 bg-green-100 soft-blob"></div>
                         <div className="relative flex items-center justify-center w-full h-full">
-                            <img src="./src/assets/puntplant.png" alt="Sow The Seeds" className="w-30 h-30" />
+                            <img src="./public/assets/puntplant.png" alt="Sow The Seeds" className="w-30 h-30" />
 
                         </div>
                     </div>

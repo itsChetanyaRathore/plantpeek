@@ -9,7 +9,7 @@ const Footer = () => {
             <footer className="bg-base-200 w-screen text-base-content py-10">
                 <div className="mt-2 flex flex-col items-center">
                     <img
-                        src="src/assets/PlantPeek_logo.png"
+                        src="public/assets/PlantPeek_logo.png"
                         alt="PlantPeek Logo"
                         className="h-30 w-40"
                     />
