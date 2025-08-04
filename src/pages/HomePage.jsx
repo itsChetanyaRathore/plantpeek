@@ -128,7 +128,7 @@ const HomePage = () => {
                     <div className="relative w-28 h-28 mx-auto">
                         <div className="absolute inset-0 bg-green-100 soft-blob"></div>
                         <div className="relative flex items-center justify-center w-full h-full">
-                            <img src="/assets/inoculate.png" alt="Sow The Seeds" className="w-30 h-30" />
+                            <img src="/inoculate.png" alt="Sow The Seeds" className="w-30 h-30" />
 
                         </div>
                     </div>
